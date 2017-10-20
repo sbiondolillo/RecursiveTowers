@@ -78,8 +78,14 @@ public class TowersOfHanoi {
 		System.out.println("Spare Peg: " + pegC);
 	}
 
-	
+	/*
+	 * Main
+	 * Introduces the program and then runs the simulated solution
+	 */
 	public static void main(String[] args) {
-		//TODO - implement solution
+		// Inroduce the program
+		System.out.println("This program will simulate the solution to the Towers of Hanoi puzzle for a starting stack of 5 disks.");
+		System.out.println("The progress will be displayed after each move so you can follow along.");
+		moveStack(5,pegA,pegB,pegC);
 	}
 }
