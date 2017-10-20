@@ -76,6 +76,7 @@ public class TowersOfHanoi {
 		System.out.println("Orginal Peg: " + pegA);
 		System.out.println("Destination Peg: " + pegB);
 		System.out.println("Spare Peg: " + pegC);
+		System.out.println();
 	}
 
 	/*
