@@ -53,6 +53,9 @@ public class TowersOfHanoi {
 		
 		// add it to the top of the destination peg
 		destination.add(disk);
+		
+		// print out the stacks to show progress
+		printStacks();
 	}
 	
 	/*
