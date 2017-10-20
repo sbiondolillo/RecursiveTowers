@@ -27,7 +27,18 @@ public class TowersOfHanoi {
 	 * @param spare - the peg we can use to shuffle things around to follow the basic rules of the puzzle
 	 */
 	private static void moveStack(int disk, List<Integer> source, List<Integer> destination, List<Integer> spare) {
-		//TODO - implement this
+		// if we are moving the smallest disk, just move it directly
+		if (disk == 1)
+			moveDisk(disk, source, destination);
+		else {
+			// Move the disks above the current disk to the spare peg, using the final destination peg as the spare
+			moveStack(disk-1, source, spare, destination);
+			// Once the disks above have been moved to the spare peg, move the target disk to the final destination peg
+			moveDisk(disk, source, destination);
+			// Now, we just need to move the remaining disks from the spare peg to the final destination peg
+			// use the original source peg as the spare for this step
+			moveStack(disk-1, spare, destination, source);
+		}
 	}
 	
 	/*
