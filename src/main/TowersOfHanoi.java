@@ -49,7 +49,7 @@ public class TowersOfHanoi {
 	 */
 	private static void moveDisk(int disk, List<Integer> source, List<Integer> destination) {
 		// remove the disk from the source peg
-		source.remove(source.indexOf(disk));
+		source.remove(Integer.valueOf(disk));
 		
 		// add it to the top of the destination peg
 		destination.add(disk);
