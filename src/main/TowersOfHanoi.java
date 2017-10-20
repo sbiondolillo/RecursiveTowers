@@ -87,6 +87,14 @@ public class TowersOfHanoi {
 		// Inroduce the program
 		System.out.println("This program will simulate the solution to the Towers of Hanoi puzzle for a starting stack of 5 disks.");
 		System.out.println("The progress will be displayed after each move so you can follow along.");
+		
+		// Build the initial stack
+		buildStack();
+		
+		// Display the starting configuration
+		printStacks();
+		
+		// Run the simulated solution
 		moveStack(5,pegA,pegB,pegC);
 	}
 }
