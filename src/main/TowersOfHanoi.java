@@ -65,6 +65,15 @@ public class TowersOfHanoi {
 		pegA.add(2);
 		pegA.add(1);
 	}
+	
+	/*
+	 * Display the current location of the disks in a readable format
+	 */
+	private static void printStacks() {
+		System.out.println("Orginal Peg: " + pegA);
+		System.out.println("Destination Peg: " + pegB);
+		System.out.println("Spare Peg: " + pegC);
+	}
 
 	
 	public static void main(String[] args) {
