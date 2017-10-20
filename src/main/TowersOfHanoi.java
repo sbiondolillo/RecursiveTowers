@@ -32,12 +32,16 @@ public class TowersOfHanoi {
 	
 	/*
 	 * Handles the movement of individual disks
-	 * @param disk - the disk to be moved, must be on top of a stack
+	 * @param disk - the disk to be moved, must be on top of a stack - must be in source List
 	 * @param source - the peg where the disk is currently sitting
 	 * @param destination - the peg where we want to move the disk
 	 */
 	private static void moveDisk(int disk, List<Integer> source, List<Integer> destination) {
-		//TODO - implement this
+		// remove the disk from the source peg
+		source.remove(source.indexOf(disk));
+		
+		// add it to the top of the destination peg
+		destination.add(disk);
 	}
 
 	
