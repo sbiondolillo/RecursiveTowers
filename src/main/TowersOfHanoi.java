@@ -14,9 +14,9 @@ import java.util.List;
 public class TowersOfHanoi {
 	
 	// Use lists of integers to represent the pegs on which the disks are placed
-	private List<Integer> pegA = new ArrayList<Integer>();
-	private List<Integer> pegB = new ArrayList<Integer>();
-	private List<Integer> pegC = new ArrayList<Integer>();
+	private static List<Integer> pegA = new ArrayList<Integer>();
+	private static List<Integer> pegB = new ArrayList<Integer>();
+	private static List<Integer> pegC = new ArrayList<Integer>();
 	
 	/*
 	 * Moves a stack of disks from one peg to another. If the disk is not on top of the stack, 
@@ -53,6 +53,17 @@ public class TowersOfHanoi {
 		
 		// add it to the top of the destination peg
 		destination.add(disk);
+	}
+	
+	/*
+	 * Initialize the starting peg with a stack of 5 disks
+	 */
+	private static void buildStack() {
+		pegA.add(5);
+		pegA.add(4);
+		pegA.add(3);
+		pegA.add(2);
+		pegA.add(1);
 	}
 
 	
