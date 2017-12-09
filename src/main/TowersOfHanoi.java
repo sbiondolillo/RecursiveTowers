@@ -10,6 +10,7 @@ package main;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TowersOfHanoi {
 	
@@ -84,9 +85,14 @@ public class TowersOfHanoi {
 	 * Introduces the program and then runs the simulated solution
 	 */
 	public static void main(String[] args) {
-		// Inroduce the program
+		Scanner input = new Scanner(System.in);
 		System.out.println("This program will simulate the solution to the Towers of Hanoi puzzle for a starting stack of 5 disks.");
 		System.out.println("The progress will be displayed after each move so you can follow along.");
+		System.out.println();
+		System.out.println("Please press the 'Enter' key to begin the demonstration.");
+		System.out.println();
+		String enter = input.nextLine();
+		
 		
 		// Build the initial stack
 		buildStack();
