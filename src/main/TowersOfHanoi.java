@@ -55,8 +55,11 @@ public class TowersOfHanoi {
 		// add it to the top of the destination peg
 		destination.add(disk);
 		
+		wait(1000);
+		
 		// print out the stacks to show progress
 		printStacks();
+		
 	}
 	
 	/*
@@ -78,6 +81,17 @@ public class TowersOfHanoi {
 		System.out.println("Destination Peg: " + pegB);
 		System.out.println("Spare Peg: " + pegC);
 		System.out.println();
+	}
+	
+	private static void wait(int delay) {
+		try        
+		{
+		    Thread.sleep(delay);
+		} 
+		catch(InterruptedException ex) 
+		{
+		    Thread.currentThread().interrupt();
+		}
 	}
 
 	/*
